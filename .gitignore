@@ -1,0 +1,4 @@
+**/.vs/
+**/*.vcxproj.user
+msvc/**/build/
+msvc/**/obj/
