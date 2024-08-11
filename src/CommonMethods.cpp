@@ -1,4 +1,4 @@
-#include "BlockiCommon.h"
+#include "CommonMethods.h"
 
 #include <cmath>
 

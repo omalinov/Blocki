@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -92,6 +92,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -106,6 +108,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +124,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,6 +140,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,18 +151,29 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\BlockiCommon.cpp" />
-    <ClCompile Include="..\..\..\src\BlockiLayoutAlgorithm.cpp" />
-    <ClCompile Include="..\..\..\src\BlockiNode.cpp" />
-    <ClCompile Include="..\..\..\src\BlockiNodeInput.cpp" />
-    <ClCompile Include="..\..\..\src\BlockiNodeResult.cpp" />
+    <ClCompile Include="..\..\..\src\BlockedInlineAPIConstructors.cpp" />
+    <ClCompile Include="..\..\..\src\CommonMethods.cpp" />
+    <ClCompile Include="..\..\..\src\LayoutAlgorithm.cpp" />
+    <ClCompile Include="..\..\..\src\Memory.cpp" />
+    <ClCompile Include="..\..\..\src\Node.cpp" />
+    <ClCompile Include="..\..\..\src\NodeStyle.cpp" />
+    <ClCompile Include="..\..\..\src\NodeResult.cpp" />
+    <ClCompile Include="..\..\..\src\StylingTypes.cpp" />
+    <ClCompile Include="..\..\..\src\Viewport.cpp" />
+    <ClCompile Include="..\..\..\src\CommonTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\src\BlockiCommon.h" />
-    <ClInclude Include="..\..\..\src\BlockiLayoutAlgorithm.h" />
-    <ClInclude Include="..\..\..\src\BlockiNode.h" />
-    <ClInclude Include="..\..\..\src\BlockiNodeInput.h" />
-    <ClInclude Include="..\..\..\src\BlockiNodeResult.h" />
+    <ClInclude Include="..\..\..\include\blocki\Config.h" />
+    <ClInclude Include="..\..\..\include\blocki\IAllocator.h" />
+    <ClInclude Include="..\..\..\src\BlockiAssert.h" />
+    <ClInclude Include="..\..\..\src\CommonMethods.h" />
+    <ClInclude Include="..\..\..\src\LayoutAlgorithm.h" />
+    <ClInclude Include="..\..\..\src\Memory.h" />
+    <ClInclude Include="..\..\..\src\Node.h" />
+    <ClInclude Include="..\..\..\src\NodeStyle.h" />
+    <ClInclude Include="..\..\..\src\NodeResult.h" />
+    <ClInclude Include="..\..\..\src\StylingTypes.h" />
+    <ClInclude Include="..\..\..\src\Viewport.h" />
     <ClInclude Include="..\..\..\src\CommonTypes.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
